@@ -25,7 +25,7 @@
           buyButton.addEventListener('click', function() {
             // Create a new Checkout Session using the server-side endpoint 
             // Redirect to Stripe Session Checkout
-            fetch('/buy/1', {method: 'GET'})
+            fetch('/buy', {method: 'GET'})
             .then(response => return response.json())
             .then(session => stripe.redirectToCheckout({ sessionId: session.id }))
           });
