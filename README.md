@@ -12,6 +12,12 @@ source venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
+* Задайте переменные окружения в корневом каталоге в файле .env
+```
+STRIPE_API_KEY - ключ API Stripe
+DJANGO_SECRET_KEY - секретный ключ Django
+```
+
 * Создайте суперпользователя
 ```
 python manage.py createsuperuser
